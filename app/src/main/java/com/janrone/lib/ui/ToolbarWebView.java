@@ -19,7 +19,15 @@ public class ToolbarWebView extends WebView {
     public ToolbarWebView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
- 
+
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        //this.setMeasuredDimension(this.getMeasuredWidth(), this.getMeasuredHeight() - 200); // the padding you need.
+    }
+
+
+
     @Override
     protected void onScrollChanged(int l, int t, int oldl, int oldt) {
  
