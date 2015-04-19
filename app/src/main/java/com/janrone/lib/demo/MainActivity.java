@@ -1,4 +1,4 @@
-package com.janrone.lib;
+package com.janrone.lib.demo;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -9,16 +9,15 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.FrameLayout;
 
-import com.janrone.lib.listener.ToobarWebViewScrollListener;
-import com.janrone.lib.ui.ToolbarWebView;
+import com.janrone.lib.listener.*;
+import com.janrone.lib.ui.*;
+
 
 import java.util.HashMap;
 import java.util.Map;
@@ -54,6 +53,8 @@ public class MainActivity extends ActionBarActivity {
 
         final ToolbarWebView webView = (ToolbarWebView) findViewById(R.id.web_view);
 
+
+
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebChromeClient(mWebChromeClientBase);
         webView.setWebViewClient(mWebViewClientBase);
@@ -64,7 +65,7 @@ public class MainActivity extends ActionBarActivity {
         webView.loadUrl("http://janrone.com/");
 
 
-        webView.setOnCustomScroolChangeListener(webView, new ToobarWebViewScrollListener(){
+        webView.setOnCustomScroolChangeListener(webView, new ToolbarWebViewScrollListener(){
             @Override
             public void onHide() {
                 hideViews();

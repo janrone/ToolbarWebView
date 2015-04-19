@@ -1,4 +1,4 @@
-package com.janrone.lib;
+package com.janrone.lib.toolbarwebview;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

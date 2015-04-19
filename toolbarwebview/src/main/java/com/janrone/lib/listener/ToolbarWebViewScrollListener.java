@@ -7,7 +7,7 @@ import com.janrone.lib.ui.ToolbarWebView;
 * views when list is scrolled. It assumes that you have added a header
 * to your webview. @see com.janrone.lib.ToolbarWebView.ScrollInterface
 * */
-public abstract class ToobarWebViewScrollListener implements ToolbarWebView.ScrollInterface {
+public abstract class ToolbarWebViewScrollListener implements ToolbarWebView.ScrollInterface {
 
     private static final int HIDE_THRESHOLD = 26;
 

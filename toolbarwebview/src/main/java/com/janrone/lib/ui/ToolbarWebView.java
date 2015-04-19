@@ -4,6 +4,10 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.webkit.WebView;
 
+/**
+ * This class is a extends webvie to add a fuc to check webview scroll.
+ *
+ */
 public class ToolbarWebView extends WebView {
     public ScrollInterface mScrollInterface;
     public ToolbarWebView mToolbarWebView;
