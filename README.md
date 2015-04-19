@@ -2,7 +2,7 @@
 
 This is an example  show or hide toolbar when scrolling a webview .
 
-### Usage
+####Usage
  
        compile 'com.janrone.android.lib:toolbarwebview:1.0.0'
  
